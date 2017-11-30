@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_bright"
+    tools:context="com.example.luisa.pe.geopeapp.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="41dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="12dp"
+                android:text="BIENVENIDO A GEOLOCALIZACION"
+                android:textColor="@android:color/background_dark"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.464"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.032" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="58dp">
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="255dp"
+                android:layout_height="41dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Servicio Tracking"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="67dp"
+                tools:layout_editor_absoluteY="76dp"
+                android:onClick="sTracking"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Switch
+                android:id="@+id/switch2"
+                android:layout_width="254dp"
+                android:layout_height="44dp"
+                android:text="Envio Automatico"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textStyle="bold"
+                android:onClick="sAuto"
+                tools:layout_editor_absoluteX="67dp"
+                tools:layout_editor_absoluteY="116dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Switch
+                android:id="@+id/switch3"
+                android:layout_width="254dp"
+                android:layout_height="45dp"
+                android:text="Localizacion"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                tools:layout_editor_absoluteX="67dp"
+                tools:layout_editor_absoluteY="162dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="101dp">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="251dp"
+                android:layout_height="43dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="?android:attr/colorForegroundInverse"
+                android:text="Enviar Informacion"
+                tools:layout_editor_absoluteX="67dp"
+                tools:layout_editor_absoluteY="231dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="27dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:id="@+id/longitud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="app_longitud"
+                android:textColor="@color/colorPrimaryDark"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintVertical_bias="0.246" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="26dp">
+
+            <TextView
+                android:id="@+id/latitud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="app_latitud"
+                android:textColor="?attr/colorPrimaryDark"
+
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="235dp"
+                android:layout_height="33dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="38dp"
+                android:text="Luisa Maria Salhua Tincoso"
+                android:textColor="@android:color/background_dark"
+                tools:layout_editor_absoluteX="77dp"
+                tools:layout_editor_absoluteY="448dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
